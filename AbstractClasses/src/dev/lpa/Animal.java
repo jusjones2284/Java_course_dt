@@ -12,6 +12,8 @@ public abstract class Animal {
         this.weight = weight;
     }
 
+
+
     public abstract void move(String speed);
     public abstract void makeNoise();
 
