@@ -1,14 +1,19 @@
 package dev.lpa;
 
-record BaseballPlayer(String name, String position){
+record BaseballPlayer(String name, String position) implements Player{
 
 }
 public class Main {
 
     public static void main(String[] args) { // Press ⌃R or click the green arrow button in the gutter to run the code.
 
+        BaseballTeam phillies1 = new BaseballTeam("Philadelphia Phillies");
+        BaseballTeam astros1 = new BaseballTeam("Houston Astros");
+        scoreResult(phillies1, 3, 5);
+
         BaseballTeam phillies = new BaseballTeam("Philadelphia Phillies");
         BaseballTeam astros = new BaseballTeam("Houston Astros");
+        scoreResult(phillies, 3, astros, 5);
 
         var harper = new BaseballPlayer("B Harper", "Right Fielder");
         var marsh = new BaseballPlayer("B Marsh", "Right Fielder");
