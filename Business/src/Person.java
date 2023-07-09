@@ -28,6 +28,24 @@ public class Person {
         int total = num1 + num2;
         return total;
     }
+    public void test(int num1, int num2, String[] args){
+        //do something clever
+    }
+
+    public void test2(int num, int num2, String... words){
+        //do something clever
+        System.out.println(words[1]);
+        System.out.println("number of arguments" + " " + words.length );
+    }
+
+    public void test3(int num1, int num2, int... numbers){
+
+    }
+
+    
+
+
+
 
     public static void main(String[] args) {
         Person p1 = new Person();
@@ -38,6 +56,11 @@ public class Person {
         char middleInital = p1.getMiddleInitial();
         System.out.println(middleInital);
         Person p2 = new Person();
+        String [] writer = {"here", "there"};
+        String[] words = new String[]{"one", "two", "three"};
+        p2.test(12,13, new String[] {"one", "two", "three"});
+        p1.test(1,2 , words);
+        p1.test2(1, 3, writer);
 
     }
 }
