@@ -2,6 +2,7 @@ import business.Company;
 public class Person {
     //constant
     private String middleName = "Mickal";
+    public static double PIs = 3.14;
     private final double PI = 3.14;
     private final String MY_BIG_CONSTANT = "Hi, this is my constant message";
     private String firstName = "Jerry";
@@ -12,6 +13,27 @@ public class Person {
     //new keyword - creating a instance of company
     static private Company company = new Company();
     private NewsAgency agency;
+    public static int[] nums = initNums();
+    public static int[] nums2;
+
+    static {
+        nums2 = new int[5];
+        nums2[0] = 3;
+        nums2[1] = 3;
+        nums2[2] = 3;
+        nums2[3] = 3;
+        nums2[4] = 3;
+    }
+
+    public static int[] initNums(){
+        int[] nums2 = new int[5];
+        nums2[0] = 3;
+        nums2[1] = 3;
+        nums2[2] = 3;
+        nums2[3] = 3;
+        nums2[4] = 3;
+        return nums2;
+    }
 
     public void sayHello() {
         System.out.println("Hello");
@@ -42,7 +64,7 @@ public class Person {
 
     }
 
-    
+
 
 
 
@@ -61,6 +83,7 @@ public class Person {
         p2.test(12,13, new String[] {"one", "two", "three"});
         p1.test(1,2 , words);
         p1.test2(1, 3, writer);
+        System.out.println(PIs);
 
     }
 }
