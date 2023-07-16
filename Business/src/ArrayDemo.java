@@ -6,5 +6,12 @@ public class ArrayDemo {
 
         int[] nums = {10,20,30,40,50};
         System.out.println(nums[1]);
+
+
+
+
+        NewsAgency vibes = new NewsAgency();
+        vibes.accessMethod();
     }
+
 }

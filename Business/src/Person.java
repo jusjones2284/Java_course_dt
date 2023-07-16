@@ -1,11 +1,18 @@
 import business.Company;
+
+import java.time.LocalDate;
+
 public class Person {
     //constant
+    protected String firstName;
     private String middleName = "Mickal";
+    private String lastName;
+    private LocalDate dob;
+
     public static double PIs = 3.14;
     private final double PI = 3.14;
     private final String MY_BIG_CONSTANT = "Hi, this is my constant message";
-    private String firstName = "Jerry";
+    private String firstNames = "Jerry";
     private int age;
     private long id;
     private char middleInitial = 'J';
@@ -65,12 +72,10 @@ public class Person {
     }
 
 
-
-
-
-
     public static void main(String[] args) {
         Person p1 = new Person();
+        p1.firstName = "Jake";
+        p1.lastName = "Smith";
         p1.sayHello();
         p1.saySomething("my name is Justin");
         System.out.println(p1.getMiddleInitial());
