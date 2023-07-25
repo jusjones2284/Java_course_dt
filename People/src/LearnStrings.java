@@ -4,7 +4,11 @@ public class LearnStrings {
         String anotherFruit = "apple";
         String vegetable = new String("broccoli");
         String anotherVegetable = new String("broccoli");
+        boolean answer = fruit == vegetable;
+        System.out.println(answer ? "yes": "no");
 
-        System.out.println(vegetable);
+        String myText = " ";
+        System.out.println(myText.isEmpty());
+        System.out.println((myText.isBlank()));
     }
 }
