@@ -41,18 +41,18 @@ public class LearnStrings1 {
 //
 //        System.out.println("my string literal".concat(text1));
 
-        String finalString =  new StringBuilder()
-                .append(text1)
-                .append(" ")
-                .append(text2)
-                .toString();
-        System.out.println(finalString);
-
-        System.out.format("%s %n %s", text1, text2);
-
-
-
-    }
+//        String finalString =  new StringBuilder()
+//                .append(text1)
+//                .append(" ")
+//                .append(text2)
+//                .toString();
+//        System.out.println(finalString);
+//
+//        System.out.format("%s %n %s", text1, text2);
+//
+//
+//
+//    }
 
 //    public static int compareToIgnoreCase(String text1, String text2){
 //        String lowerText1 = text1.toLowerCase();
@@ -68,4 +68,29 @@ public class LearnStrings1 {
 //    public static String split(String text){
 //        return text.replace(" Jason ", "Justin");
 //    }
+//        String myText = "for";
+//        System.out.println(myText.length());
+//        char [] chars = myText.toCharArray();
+//        int index = 0;
+////        if( index < myText.length()){
+////            System.out.println(chars[index]);
+////            System.out.println(index);
+////            index ;
+////        }
+//        System.out.println(chars[index]);
+//        String myText1 = "for";
+//        String myText2 = "score";
+//
+//        StringBuilder builder = new StringBuilder(myText1.length() + myText2.length())
+//                .append(myText1)
+//                .append(myText2);
+//        System.out.println(builder.toString());
+        String myText = "apple";
+        String firstPart = myText.substring(0, 1);
+        String lastPart = myText.substring(1);
+        String myNewText = firstPart.toUpperCase() + lastPart;
+        String myNewText1 = myNewText.substring(0,1).toUpperCase().concat(myText.substring(1));
+        System.out.println(myNewText);
+
+    }
 }
