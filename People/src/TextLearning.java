@@ -18,6 +18,13 @@ public class TextLearning {
 
         System.out.println(filename.endsWith("txt"));
         System.out.println(filename.startsWith("myfi"));
+
+        String firstText =  "Apple";
+        String secondText = "Apple";
+        StringBuffer thridText = new StringBuffer("Apple");
+        System.out.println(firstText.equals(secondText));
+        System.out.println(firstText.contentEquals(secondText));
+        StringBuilder secondTexts = new StringBuilder("Apple");
     }
 
 
