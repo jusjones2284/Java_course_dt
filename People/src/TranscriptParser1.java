@@ -23,7 +23,8 @@ public class TranscriptParser1 {
         if (mat.matches()){
             System.out.println(mat.group("studentNum"));
             System.out.println(mat.group("grade"));
+            
         }
 
     }
-}
+

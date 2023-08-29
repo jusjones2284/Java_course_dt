@@ -17,7 +17,8 @@ public class TranscriptParser {
                 Grade:\\s+(?<grade>\\d{1,2}).* #Grad student number
                 Birthdate:\\s+(?<birthMonth>\\d{1,2})/(?<birthDay>\\d{1,2})/(?<birthYear>\\d{4}).*
                 Gender:\\s+(?<gender>\\w+)\\b.* #grab the gender
-                State\\sID:\\s+(?<stateId>\\d+).* #grabed the state ID
+                State\\sID:\\s+(?<stateId>\\d+).*? #grabed the state ID
+                Cumulative.*?(?<weightedGPA>[\\d\\.]+)\\b.*
                 Weighted\\)\\s+(?<weightedGPA>\\d[\\d\\.]+)\\b.* #grab the weighted GPA
                 Unweighted\\)\\s+(?<unweightedGPA>\\d[\\d\\.]+)\\b.* #grab the unweighted GPA
                 """;
