@@ -70,25 +70,37 @@ public class Chapter3 {
 //                System.out.println("z is " + z);
 //            } else System.out.println("x is " + x);
 //        }
-        int age = 66;
-        int minors = 0;
-        int adults = 1;
-        int seniors = 2;
+//        int age = 66;
+//        int minors = 0;
+//        int adults = 1;
+//        int seniors = 2;
+//
+//
+//        if (age < 18){
+//            minors +=1;
+//            System.out.println(minors);
+//        } else if (age <= 64){
+//            adults += 1;
+//            System.out.println(adults);
+//
+//        } else if (age >= 65) {
+//            adults += 10;
+//            seniors += 10;
+//            System.out.println(adults + " " + seniors);
+//
+//        }
+        boolean isIsosceles = true;
+        int isoCount = 0;
+        int triangleCount = 0;
+        int polygonCount = 0;
 
+        if (isIsosceles = true){
+            isoCount ++;
+            triangleCount ++;
+            polygonCount ++;
 
-        if (age < 18){
-            minors +=1;
-            System.out.println(minors);
-        } else if (age <= 64){
-            adults += 1;
-            System.out.println(adults);
-
-        } else if (age >= 65) {
-            adults += 10;
-            seniors += 10;
-            System.out.println(adults + " " + seniors);
-
-        }
+        };
+        System.out.println(isoCount);
 
     }
 
