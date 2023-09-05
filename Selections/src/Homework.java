@@ -1,3 +1,5 @@
+import java.security.SecureRandom;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Homework {
@@ -140,6 +142,16 @@ public class Homework {
         System.out.println((int)Math.pow(2,4));
         System.out.println((int)(Math.random() * 10));
         System.out.println(Math.round(5.8));
+
+        Random random = new Random();
+        System.out.println(random.nextInt(10));
+        System.out.println(random.nextBoolean());
+        System.out.println(random.nextFloat());
+
+        SecureRandom randoms = new SecureRandom();
+        System.out.println(randoms.nextInt(10));
+
+
             }
 
         }
