@@ -37,7 +37,7 @@ public class Circle4 extends GeometricObject{
 
     public String toString(){
         return "Circle WWW " + getColor() + super.toString();
-        Math.abs(5);
+//        Math.abs(5);
     }
 
 

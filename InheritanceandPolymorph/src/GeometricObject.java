@@ -44,7 +44,7 @@ public class GeometricObject {
         GeometricObject jus = new GeometricObject("red", false);
         System.out.println(jus.date);
         Circle4 fatBoy = new Circle4(499, "blues", true);
-        System.out.println(fatBoy.sumRadius());
+//        System.out.println(fatBoy.sumRadius());
 
 
 //        fatBoy.setColor("white");
