@@ -11,6 +11,10 @@ public class TestGeometricObject {
 
         displayGeometricObject(geoObject2);
 
+        Number x = 3;
+        System.out.println(x.intValue());
+        System.out.println(x.doubleValue());
+
 
     }
 
@@ -24,3 +28,33 @@ public class TestGeometricObject {
         System.out.println("The perimeter is " + object.getPerimeter());
     }
 }
+//
+//public class ApartmentHouse extends RentableDwelling {
+//    public ApartmentHouse(double rentPerUnit, int numberOfApartments) {
+//        super(rentPerUnit);
+//        this.numberOfApartments = numberOfApartments;
+//    }
+//    public double getRentalIncome() {
+//        return getRentPerUnit() * numberOfApartments;
+//    }
+//    private int numberOfApartments;
+//}
+//
+//public abstract class Vehicle {
+//    public Vehicle(double maxSpeed) {
+//        this.maxSpeed = maxSpeed;
+//    }
+//    public abstract void accelerate();
+//    public double getCurrentSpeed() {
+//        return currentSpeed;
+//    }
+//    public double getMaxSpeed() {
+//        return maxSpeed;
+//    }
+//    public void pedalToTheMetal() {
+//        while (currentSpeed < maxSpeed)
+//            accelerate();
+//    }
+//    protected double currentSpeed;
+//    private double maxSpeed;
+//}
